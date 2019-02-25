@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Where I am from</title>
+	<meta name="description" content="A slideshow with a layer motion parallax effect and a different grid layout for every slide" />
+	<meta name="keywords" content="css grid, slideshow, parallax, layout, template, web design, web development, javascript" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+</head>
+
+<body class="loading">
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+		</symbol>
+		<symbol id="icon-nav" viewBox="0 0 407 660">
+			<title>caret</title>
+			<path d="M77 0L0 77l253 253L0 583l77 77 330-330z" />
+		</symbol>
+	</svg>
+	<main>
+		<p class="message">Please view on desktop to see the full layout</p>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">Click here for next paragraph</h1>
+				<div class="nav">
+					<div class="nav__counter">
+						<span>0</span>/<span>0</span>
+					</div>
+					<div class="nav__arrows">
+						<button class="nav__arrow nav__arrow--prev" data-hover>
+							<svg class="icon icon--rotated icon--nav">
+								<use xlink:href="#icon-nav"></use>
+							</svg>
+						</button>
+						<button class="nav__arrow nav__arrow--next" data-hover>
+							<svg class="icon icon--nav">
+								<use xlink:href="#icon-nav"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div><!-- /frame__title-wrap -->
+
+			<div class="index" data-hover></div>
+		</div>
+		<!--/frame-->
+		<div class="slideshow">
+			<div class="slide slide--layout-1" data-contentcolor="#e88655">
+				<div class="slide__figure slide__figure--main" data-sort="3">
+					<div class="slide__figure-img" style="background-image: url(img/1.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="2">
+					<div class="slide__figure-img" style="background-image: url(img/3.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="4">
+					<div class="slide__figure-img" style="background-image: url(img/2.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="1">
+					<div class="slide__figure-img" style="background-image: url(img/4.jpg)"></div>
+				</div>
+				<h2 class="slide__title">Where I am from</h2>
+				<div class="slide__text slide__text--right">
+					<p class="slide__text-meta">I am from a city, <br>
+Yangzi river flows across it and slices into three. <br>
+I come from the falling tone that have up-turned accent. <br>
+From the summer rain that drowns my ankles. <br>
+From the steam in front of the breakfast bar, <br>
+and the more I stir chopsticks, the stronger its smells spread out. <br>
+
+
+					</p>
+					<p class="slide__text-description">我来自一条江分开的三个小镇<br>
+						和第四声上翘的口音<br>
+						是淹没到脚腕的夏日雨水<br>
+						来自永远排着队的早餐热气中 拿筷子越搅拌越散开来的浓烈<br>
+
+					</p>
+					<a class="slide__text-link" data-hover href="#">+</a>
+				</div>
+				<button class="slide__back" data-hover>
+					<svg class="icon icon--back">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</button>
+				<div class="slide__content">
+					<p>Wuhan,( simplified Chinese: 武汉; traditional Chinese: 武漢) is the capital of Hubei province, People's Republic of China. It's the most populous city in Central China, and one of the nine National Central Cities of China. It lies in the eastern Jianghan Plain on the middle reaches of the Yangtze River's intersection with the Han river. Arising out of the conglomeration of three cities, Wuchang, Hankou, and Hanyang, Wuhan is known as 'China's Thoroughfare' ; it is a major transportation hub, with dozens of railways, roads and expressways passing through the city and connecting to other major cities. Because of its key role in domestic transportation, Wuhan is sometimes referred to as "the Chicago of China" by foreign sources.</p>
+				</div>
+			</div>
+			<div class="slide slide--layout-2" data-contentcolor="#7dd2dc">
+				<div class="slide__figure slide__figure--main" data-sort="1">
+					<div class="slide__figure-img" style="background-image: url(img/5.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="2">
+					<div class="slide__figure-img" style="background-image: url(img/6.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="3">
+					<div class="slide__figure-img" style="background-image: url(img/7.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="4">
+					<div class="slide__figure-img" style="background-image: url(img/8.jpg)"></div>
+				</div>
+				<h2 class="slide__title">Where I am from</h2>
+				</h2>
+				<div class="slide__text">
+					<p class="slide__text-meta">I am from the sorrow floating on the haze of the river, <br>
+and fly away with a crane. <br>
+A bridge flies to span the river, <br>
+turning a deep chasm into a thoroughfare. <br>
+
+<br>
+I am from the falling of the cherry blossom petals, <br>
+in a spring night. <br>
+Riding a bike through the path by the lake, <br>
+the breeze blew the hair on my cheek. <br>
+
+					</p>
+					<p class="slide__text-description">我来自烟波江上乘鹤而去的离愁<br>
+						来自一桥飞架南北的通途<br>
+						是春天夜灯下的樱花花瓣 飘落<br>
+						单车穿过湖边的小道<br>
+						风吹动脸颊旁的头发<br>
+
+					</p>
+					<a class="slide__text-link" data-hover href="#">+</a>
+				</div>
+				<button class="slide__back" data-hover>
+					<svg class="icon icon--back">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</button>
+				<div class="slide__content">
+					<p>Guozao (過早) is a popular way to say 'having breakfast' in Wuhan,[181] and a part of the city's culture. As a hub for land transport in China, Wuhan has gathered and mixed together various habits and customs from neighboring cities and provinces in all directions, which gives rise to a concentration of diverse cuisines from different places. The most famous place to guozao (have breakfast) is Hubu Street (户部巷), a 150-meter-long street in the popular neighborhood of Simenkou (司门口). Along its short length one can find nearly all the traditional foods of Wuhan, such as:</p>
+
+				</div>
+			</div>
+			<div class="slide slide--layout-3" data-contentcolor="#dc9d7f">
+				<div class="slide__figure slide__figure--main" data-sort="1">
+					<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="2">
+					<div class="slide__figure-img" style="background-image: url(img/14.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="3">
+					<div class="slide__figure-img" style="background-image: url(img/15.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="4">
+					<div class="slide__figure-img" style="background-image: url(img/16.jpg)"></div>
+				</div>
+				<h2 class="slide__title">Where I am from</h2>
+				</h2>
+				<div class="slide__text">
+					<p class="slide__text-meta">
+
+						I am from the neon lights that flare late into night, <br>
+						And reflected on the water, those glinting lights. <br>
+						The starlight all over the sky suddenly fell in my eyes. <br>
+<br>
+
+						I come from the memories that not yet captured by camera. <br>
+From missed leisure time under sunshine, <br>
+the autumn reed, the winter snow. <br>
+The purring cat lying on the street stopped my step. <br>
+
+					</p>
+					<p class="slide__text-description">
+						是晚上不会熄灭城市霓虹<br>
+						和倒映在水面的闪闪萤光<br>
+						是漫天的星光落在了我的眼中<br>
+
+						我来自照片也没来的及记录下来的闪亮时光<br>
+						错过的在阳光下撒欢的闲暇，秋天的芦花，冬日的初雪<br>
+						街边乖乖躺下撒娇的猫咪挡住了我的脚步<br>
+					</p>
+					<a class="slide__text-link" data-hover href="#">+</a>
+				</div>
+				<button class="slide__back" data-hover>
+					<svg class="icon icon--back">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</button>
+				<div class="slide__content">
+					<p>Guozao (過早) is a popular way to say 'having breakfast' in Wuhan,[181] and a part of the city's culture. As a hub for land transport in China, Wuhan has gathered and mixed together various habits and customs from neighboring cities and provinces in all directions, which gives rise to a concentration of diverse cuisines from different places. The most famous place to guozao (have breakfast) is Hubu Street (户部巷), a 150-meter-long street in the popular neighborhood of Simenkou (司门口). Along its short length one can find nearly all the traditional foods of Wuhan, such as:</p>
+				<ul>
+					<li>	Hot and dry noodles, re-gan mian (热干面), consists of long freshly boiled noodles mixed with sesame paste. It is considered to be the most typical local food for breakfast.</li>
+					<li>	Duck's neck or Ya Bozi (鸭脖子) is a local version of this popular Chinese dish, made of duck necks and spices.</li>
+					<li>Bean skin or doupi (豆皮) is a popular local dish with a filling of egg, rice, beef, mushrooms and beans cooked between two large round soybean skins and cut into pieces, structurally like a stuffed pizza without enclosing edges.</li>
+					<li>Soup dumpling or xiaolongtangbao (小笼汤包) is a kind of dumpling with thin skin made of flour, steamed with very juicy meat inside, hence the name: tang (soup) bao (bun) – every time one takes a bite from it the "soup" inside is liable to spill out.</li>
+						<li>A salty doughnut or mianwo (面窝) is a kind of doughnut with a salty taste. It is much thinner than a common doughnut and is a typical Wuhan local food.</li>
+				</ul>
+				</div>
+			</div>
+			<div class="slide slide--layout-4" data-contentcolor="#e4d0a2">
+				<div class="slide__figure slide__figure--main" data-sort="4">
+					<div class="slide__figure-img" style="background-image: url(img/9.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="3">
+					<div class="slide__figure-img" style="background-image: url(img/10.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="2">
+					<div class="slide__figure-img" style="background-image: url(img/11.jpg)"></div>
+				</div>
+				<div class="slide__figure slide__figure--box" data-sort="1">
+					<div class="slide__figure-img" style="background-image: url(img/12.jpg)"></div>
+				</div>
+				<h2 class="slide__title">Where I am from</h2>
+				</h2>
+				<div class="slide__text slide__text--right">
+					<p class="slide__text-meta">I come from the familiar taste that existing on my tongue, <br>
+and the memory that keep flashing back in my mind. <br>
+My tears fell down, turning into a mass of moist vapor, <br>
+then it becomes the rain drops dripping on your forehead. <br>
+
+					</p>
+					<p class="slide__text-description">来自想要逃出去的脚步和凌晨夜里涌上心头的乡愁<br>
+						我来自舌尖上忘不掉的滋味和脑海里闪回的记忆<br>
+						掉下来的眼泪化为一团水汽<br>
+						然后变成雨滴落在你的前额<br></p>
+					<a class="slide__text-link" data-hover href="#">+</a>
+				</div>
+				<button class="slide__back" data-hover>
+					<svg class="icon icon--back">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</button>
+				<div class="slide__content">
+
+				</div>
+			</div>
+		</div>
+		<!--/slideshow-->
+	</main>
+	<div class="cursor">
+		<div class="cursor__inner cursor__inner--circle"></div>
+		<div class="cursor__inner cursor__inner--dot"></div>
+	</div>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/charming.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>
