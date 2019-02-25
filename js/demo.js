@@ -538,7 +538,7 @@
 
 var bgmusic = document.getElementById('bgmusic');
 bgmusic.addEventListener('canplay', function(){
-	this.play();
+	bgmusic.play();
 }, false);
 window.addEventListener('load', function(){
 	window.addEventListener('touchstart', once, false);
