@@ -534,17 +534,3 @@
     // Preload all the images in the page.
     imagesLoaded(document.querySelectorAll('.slide__figure-img'), {background: true}, () => body.classList.remove('loading'));
 }
-
-
-var bgmusic = document.getElementById('bgmusic');
-bgmusic.addEventListener('canplay', function(){
-	bgmusic.play();
-}, false);
-window.addEventListener('load', function(){
-	window.addEventListener('touchstart', once, false);
-}, false);
-function once(){
-	bgmusic.play();
-	window.removeEventListener('touchstart', once, false);
-}
-
